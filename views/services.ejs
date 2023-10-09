@@ -1,0 +1,56 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<!-- Services Section -->
+<div class="container mt-5 mb-5">
+    <h2 class="text-center mb-4">Services Offered</h2>
+    
+    <div class="row">
+
+        <!-- Service 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-tile">
+                <img src="/images/service1.jpeg" alt="Service 1 Icon" class="service-icon">
+                <h5>Web Development</h5>
+                <p>Building responsive and modern websites for diverse needs.</p>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-tile">
+                <img src="/images/service2.jpg" alt="Service 2 Icon" class="service-icon">
+                <h5>Mobile Apps</h5>
+                <p>Creating engaging mobile applications for Android and iOS platforms.</p>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="service-tile">
+                <img src="/images/service3.png" alt="Service 3 Icon" class="service-icon">
+                <h5>UI/UX Design</h5>
+                <p>Designing user interfaces with a focus on user experience.</p>
+            </div>
+        </div>
+
+        <!-- Additional services can be added in a similar manner -->
+    </div>
+</div>
+
+<!-- CSS in case you want to add specific styling for the tiles -->
+<style>
+    .service-tile {
+        border: 1px solid #eee;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .service-icon {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+</style>
+
+<%- include('partials/footer') %>

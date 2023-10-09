@@ -1,0 +1,49 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<!-- Contact Section -->
+<div class="container-fluid mt-5 mb-5">
+    <div class="row">
+
+        <!-- Contact Form -->
+        <div class="col-md-6 bg-light p-5">
+            <h4 class="mb-4">Contact form</h4>
+            <form action="/submit" method="post">
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName">
+                </div>
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName">
+                </div>
+                <div class="mb-3">
+                    <label for="contactNumber" class="form-label">Phone #</label>
+                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-warning">Send</button>
+            </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-md-6 p-5 bg-warning text-dark">
+            <h4 class="mb-3">Contact Details</h4>
+            <p>
+                <strong>Email:</strong> eespino7@my.centennialcollege.ca <br>
+                <strong>Phone:</strong> +1-111-222-333 <br>
+                <strong>Address:</strong> Toronto, ON <br>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<%- include('partials/footer') %>
